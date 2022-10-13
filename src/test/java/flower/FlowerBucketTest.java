@@ -1,6 +1,5 @@
 package flower;
 
-import flower.Rose;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -18,7 +17,7 @@ public class FlowerBucketTest {
     }
 
     @Test
-    private void testPrice() {
+    public void testPrice() {
         assertEquals(100, flowerBucket.getPrice());
     }
 
