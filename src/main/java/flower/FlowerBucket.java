@@ -7,6 +7,9 @@ public class FlowerBucket {
     public void add(FlowerPack flower){
         this.flowers.add(flower);
     }
+    public FlowerBucket(){
+        this.flowers = new ArrayList<FlowerPack>();
+    }
 
     public double getPrice(){
         double ret_price = 0;
