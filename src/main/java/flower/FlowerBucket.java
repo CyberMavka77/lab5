@@ -3,10 +3,11 @@ package flower;
 import java.util.ArrayList;
 
 public class FlowerBucket {
+    private ArrayList<FlowerPack> flowers;
     public FlowerBucket() {
         this.flowers = new ArrayList<FlowerPack>();
     }
-    private ArrayList<FlowerPack> flowers;
+
     public void add(FlowerPack flower) {
         this.flowers.add(flower);
     }

@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FlowerTest {
+    public static final int FLPRICE = 20;
     private Flower flower;
 
     @BeforeEach
@@ -15,9 +16,8 @@ public class FlowerTest {
 
     @Test
     public void testPrice() {
-        int price = 20;
-        flower.setPrice(price);
-        assertEquals(price, flower.getPrice());
+        flower.setPrice(FLPRICE);
+        assertEquals(FLPRICE, flower.getPrice());
     }
 
     @Test
