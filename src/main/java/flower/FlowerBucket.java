@@ -3,19 +3,19 @@ package flower;
 import java.util.ArrayList;
 
 public class FlowerBucket {
+    public FlowerBucket() {
+        this.flowers = new ArrayList<FlowerPack>();
+    }
     private ArrayList<FlowerPack> flowers;
     public void add(FlowerPack flower) {
         this.flowers.add(flower);
     }
-    public FlowerBucket() {
-        this.flowers = new ArrayList<FlowerPack>();
-    }
 
     public double getPrice() {
-        double ret_price = 0;
+        double retPrice = 0;
         for (FlowerPack fl: this.flowers) {
-            ret_price += fl.getPrice();
+            retPrice += fl.getPrice();
         }
-        return ret_price;
+        return retPrice;
     }
 }
