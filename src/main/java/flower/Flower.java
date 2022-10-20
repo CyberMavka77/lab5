@@ -17,8 +17,8 @@ public class Flower {
     }
     public Flower(){};
 
-    public void setColor(FlowerColor color){
-        this.color = color.toString();
+    public void setColor(FlowerColor color1){
+        this.color = color1.toString();
     }
 
 }

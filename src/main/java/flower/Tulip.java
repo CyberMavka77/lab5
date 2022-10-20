@@ -1,7 +1,10 @@
 package flower;
 
 public class Tulip extends Flower{
+    public static final int TULLEN = 15;
+    public static final int TULPRICE = 17;
     public Tulip() {
-    super(15, FlowerColor.GREEN, 17);
+
+    super(TULLEN, FlowerColor.GREEN, TULPRICE);
 }
 }
