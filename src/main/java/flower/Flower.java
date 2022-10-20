@@ -1,6 +1,5 @@
 package flower;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,11 +13,13 @@ public class Flower {
         setColor(red);
         this.sepalLength = sepalLength;
         this.price = price;
+
     }
     public Flower(){};
 
-    public void setColor(FlowerColor color1){
-        this.color = color1.toString();
+    public void setColor(FlowerColor coloR) {
+        this.color = coloR.toString();
+
     }
 
 }
