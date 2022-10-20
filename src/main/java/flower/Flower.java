@@ -15,7 +15,9 @@ public class Flower {
         this.price = price;
 
     }
-    public Flower(){};
+    public Flower() {
+
+    };
 
     public void setColor(FlowerColor coloR) {
         this.color = coloR.toString();
