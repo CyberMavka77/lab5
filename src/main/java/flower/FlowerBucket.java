@@ -4,16 +4,16 @@ import java.util.ArrayList;
 
 public class FlowerBucket {
     private ArrayList<FlowerPack> flowers;
-    public void add(FlowerPack flower){
+    public void add(FlowerPack flower) {
         this.flowers.add(flower);
     }
-    public FlowerBucket(){
+    public FlowerBucket() {
         this.flowers = new ArrayList<FlowerPack>();
     }
 
-    public double getPrice(){
+    public double getPrice() {
         double ret_price = 0;
-        for (FlowerPack fl: this.flowers){
+        for (FlowerPack fl: this.flowers) {
             ret_price += fl.getPrice();
         }
         return ret_price;

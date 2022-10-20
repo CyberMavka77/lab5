@@ -5,13 +5,13 @@ public enum FlowerColor {
     private final String stringrepresentation;
 
 
-    FlowerColor(String stringrepresentation){
+    FlowerColor(String stringrepresentation) {
         this.stringrepresentation = stringrepresentation;
 
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return stringrepresentation;
     }
 }
