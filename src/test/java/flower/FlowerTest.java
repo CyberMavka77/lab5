@@ -2,8 +2,7 @@ package flower;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Assertions;
 
 public class FlowerTest {
     public static final int FLPRICE = 20;
@@ -17,13 +16,13 @@ public class FlowerTest {
     @Test
     public void testPrice() {
         flower.setPrice(FLPRICE);
-        assertEquals(FLPRICE, flower.getPrice());
+        Assertions.assertEquals(FLPRICE, flower.getPrice());
     }
 
     @Test
     public void testColor() {
         FlowerColor color = FlowerColor.RED;
         flower.setColor(color);
-        assertEquals("#FF0000", flower.getColor());
+        Assertions.assertEquals("#FF0000", flower.getColor());
     }
 }
